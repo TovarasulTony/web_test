@@ -23,5 +23,6 @@ from flask import send_from_directory
 @app.route('/<path:path>')
 def send_report(path):
     print("HELLO!")
-    print(send_from_directory(str(pathlib.Path(__file__).parent)+'/TemplateData', path))
-    return send_from_directory(str(pathlib.Path(__file__).parent)+'/TemplateData', path)
+    print(path)
+    print(send_from_directory(str(pathlib.Path(__file__).parent), path))
+    return send_from_directory(str(pathlib.Path(__file__).parent), path)

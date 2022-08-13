@@ -3,6 +3,7 @@ import pathlib
 
 # I really don't limke this hack
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
+sys.path.insert(0, str(pathlib.Path(__file__).parent) + '/Build')
 
 import os
 import secrets

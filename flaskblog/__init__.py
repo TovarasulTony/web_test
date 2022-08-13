@@ -16,7 +16,7 @@ def get_root_path():
 def get_template_folder():
 	return_path = str(pathlib.Path(__file__).parent)
 	print(return_path)
-    return return_path
+	return return_path
 
 def get_static_folder():
     return str(pathlib.Path(__file__).parent)

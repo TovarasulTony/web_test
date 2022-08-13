@@ -8,7 +8,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent) + '/Build')
 import os
 import secrets
 from PIL import Image
-from flask import render_template, url_for, flash, redirect, request, abort, send_from_directory, jsonify, send_file
+from flask import render_template, url_for, flash, redirect, request, abort, send_from_directory, jsonify
 from flaskblog import app
 
 
@@ -23,5 +23,5 @@ from flask import send_from_directory
 @app.route('/<path:path>')
 def send_report(path):
     print("HELLO!")
-    print(send_file(str(pathlib.Path(__file__).parent), path))
-    return send_file(str(pathlib.Path(__file__).parent), path)
+    print(send_from_directory(str(pathlib.Path(__file__).parent)+'/TemplateData', path))
+    return send_from_directory(str(pathlib.Path(__file__).parent)+'/TemplateData', path)

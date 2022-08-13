@@ -15,4 +15,4 @@ from flaskblog import app
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('index_2.html')
+    return render_template('index.html')

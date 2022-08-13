@@ -8,7 +8,7 @@ import os
 import secrets
 from PIL import Image
 from flask import render_template, url_for, flash, redirect, request, abort, send_from_directory, jsonify
-from flaskblog import app, bcrypt, mail
+from flaskblog import app
 
 
 

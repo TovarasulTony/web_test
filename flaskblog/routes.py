@@ -15,4 +15,4 @@ from flaskblog import app, db, bcrypt, mail
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('index.html'
+    return render_template('index.html')

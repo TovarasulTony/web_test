@@ -2,4 +2,4 @@ from flaskblog import app
 
 
 if __name__ == "__main__":
-    app.run(host="194.135.95.157", port=1077)
+    app.run(host="194.135.95.157", port=1077, ssl_context='adhoc')

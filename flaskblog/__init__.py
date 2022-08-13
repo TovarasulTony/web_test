@@ -20,7 +20,10 @@ def get_template_folder():
 	return return_path
 
 def get_static_folder():
-    return str(pathlib.Path(__file__).parent)
+	return_path = str(pathlib.Path(__file__).parent)
+	return_path+='/TemplateData'
+	print(return_path)
+	return return_path
 
 app = Flask("client",
             template_folder=get_template_folder(),

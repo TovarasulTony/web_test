@@ -15,7 +15,7 @@ def get_root_path():
 
 def get_template_folder():
 	return_path = str(pathlib.Path(__file__).parent)
-	return_path+='/TemplateData'
+	#return_path+='/TemplateData'
 	print(return_path)
 	return return_path
 
